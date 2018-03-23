@@ -1,5 +1,5 @@
 from abc import ABCMeta, abstractmethod
-from variaveisAbsolutas import *
+from variaveisAmbiente import *
 
 # TODO: Impedir esta classe de ser instanciada
 # TODO: Colocar um nome mais claro para esta classe, como AbstractBase, já que lidará com datasets e queries
