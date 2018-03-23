@@ -1,10 +1,9 @@
+DIRETORIO_IOACAS = "datasets/IOACAS_QBH/"
+DIRETORIO_MIR = "datasets/MIR-QBSH-corpus/"
 
-diretorioIoacas = "datasets/IOACAS_QBH/"
-diretorioMir = "datasets/MIR-QBSH-corpus/"
 
+ARQUIVO_MIDI = "midi.list"
+ARQUIVO_QUERY = "query.list"
 
-arquivoMidi = "midi.list"
-arquivoQuery = "query.list"
-
-datasetMir = diretorioMir + arquivoMidi
-datasetIocas = diretorioIoacas + arquivoMidi
+DATASET_MIR = DIRETORIO_MIR + ARQUIVO_MIDI
+DATASET_IOACAS = DIRETORIO_IOACAS + ARQUIVO_MIDI

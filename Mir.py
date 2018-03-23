@@ -4,4 +4,4 @@ class Mir(AbstractDataset):
     """docstring for Mir."""
     def __init__(self):
         super(Mir, self).__init__()
-        self._dataset = datasetMir
+        self._dataset = DATASET_MIR
