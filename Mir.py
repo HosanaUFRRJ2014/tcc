@@ -1,5 +1,6 @@
 from AbstractDataset import *
 
+
 class Mir(AbstractDataset):
     """docstring for Mir."""
     def __init__(self):
@@ -8,11 +9,13 @@ class Mir(AbstractDataset):
         self._queries = QUERIES_MIR
         self._diretorioBase = DIRETORIO_MIR
 
-
-
     def _obterRespostaCorreta(self, linhaArquivo):
         linhaSplitada = linhaArquivo.rpartition('/')
         resposta = linhaSplitada[len(linhaSplitada) - 1]
-        resposta = self._diretorioBase + PASTA_DATASET + resposta.replace("wav","mid")
+        resposta = self._concat(
+            self._diretorioBase,
+            PASTA_DATASET,
+            resposta.replace("wav", "mid")
+        )
 
         return resposta
